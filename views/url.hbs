@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Url</title>
+  </head>
+  <body>
+    <a href="/urls/new">Create a Shortened URL</a>
+    <p><i>List of Shortened URL's:</i></p>
+    {{#each urls}}
+      <a href="{{shortenedUrl}}">{{shortenedUrl}}</a><br>
+    {{/each}}
+  </body>
+</html>
