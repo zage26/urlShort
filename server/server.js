@@ -53,9 +53,10 @@ app.get("/:short", (req, res) => {
   //could use findOne
   Url.find({shortenedUrl: short})
     .then(doc => {
-      console.log(doc[0].originalUrl);
-      res.redirect(doc[0].originalUrl);
-    }, e => {
+      const long = doc[0].originalUrl;
+      res.redirect(long);
+    })
+    .catch(e => {
       res.status(404).send(e);
     })
 })
