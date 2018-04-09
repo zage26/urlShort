@@ -8,8 +8,7 @@
     "start": "node server/server.js"
   },
   "engines": {
-    "node": "9.7.1",
-    ""
+    "node": "9.7.1"
   },
   "author": "Zage S.Phillips",
   "license": "ISC",
